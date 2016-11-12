@@ -1,0 +1,37 @@
+{
+  "name": "cpu-gauge",
+  "version": "1.0.0",
+  "description": "Simple CPU usage metering for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js --100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotchev/cpu-gauge.git"
+  },
+  "keywords": [
+    "cpu",
+    "usage",
+    "percent"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=6.1"
+  },
+  "author": "Peter Dotchev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dotchev/cpu-gauge/issues"
+  },
+  "homepage": "https://github.com/dotchev/cpu-gauge#readme",
+  "dependencies": {
+    "clockit": "^1.0.1"
+  },
+  "devDependencies": {
+    "sinon": "^1.17.6",
+    "tap": "^8.0.0"
+  }
+}
