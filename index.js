@@ -7,12 +7,10 @@ exports.start = function() {
   const startCpu = process.cpuUsage();
   return {
     usage() {
-      const cpu = process.cpuUsage(startCpu);
-      const time = timer.us;
-      return Object.assign(cpu, {
-        time,
-        percent: (cpu.system + cpu.user) / time * 100
-      });
+      const u = process.cpuUsage(startCpu);
+      u.time = timer.us;
+      u.percent = (u.system + u.user) / u.time * 100;
+      return u;
     }
   };
 }
