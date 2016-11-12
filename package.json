@@ -1,7 +1,7 @@
 {
   "name": "cpu-gauge",
   "version": "1.0.0",
-  "description": "Simple CPU usage metering for Node.js",
+  "description": "Simple CPU usage metering for node",
   "main": "index.js",
   "scripts": {
     "test": "tap test.js --100"
