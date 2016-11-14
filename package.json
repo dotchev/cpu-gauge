@@ -4,7 +4,7 @@
   "description": "Simple CPU usage metering for node",
   "main": "index.js",
   "scripts": {
-    "test": "tap test.js --100"
+    "test": "tap test.js"
   },
   "repository": {
     "type": "git",

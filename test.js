@@ -5,6 +5,11 @@ const sinon = require('sinon');
 const clockit = require('clockit');
 const gauge = require('.');
 
+if (/^v4/.test(process.version)) {
+  tap.notOk(gauge.start);
+  return;
+}
+
 tap.test('stub CPU & time', (t) => {
   var sandbox = sinon.sandbox.create();
   sandbox.stub(process, 'cpuUsage');

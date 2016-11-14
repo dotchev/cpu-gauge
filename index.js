@@ -1,5 +1,7 @@
 'use strict';
 
+if (!process.cpuUsage) return;
+
 const clockit = require('clockit');
 
 exports.start = function() {
