@@ -38,7 +38,7 @@ Returns a _cpu_ object.
 
 ### cpu.usage()
 
-Resturns CPU usage of current process since _start()_ invocation.
+Returns CPU usage of current process since _start()_ invocation.
 Returned object has the following properties:
 * `user` - user CPU time in microseconds
 * `system` - system CPU time in microseconds
